@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Subway Website</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Subway Website</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <img src="./images/banner-placeholder.jpg" alt="Banner Image">
-        </div>
-    </header>
-    
-    <main>
-        <section>
-            <h1>Contact Us</h1>
-            <p>Have any questions or concerns? Feel free to reach out to us using the form below or via our contact details.</p>
-            
-            <form action="submit-form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-            
-            <h2>Our Contact Details</h2>
-            <p>Email: contact@subwaywebsite.com</p>
-            <p>Phone: (453) 234 876</p>
-            <p>Address: 123 Subway St, Ontario, Canada</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Subway Website. All rights reserved.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <img src="./images/banner-placeholder.jpg" alt="Banner Image" />
+    </div>
+  </header>
+  
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>Have any questions or concerns? Feel free to reach out to us using the form below or via our contact details.</p>
+      
+      <form action="submit-form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      
+      <!-- Contact details as a list with the class "contact" -->
+      <h2>Our Contact Details</h2>
+      <ul class="contact">
+        <li>Name: Subway Website Support</li>
+        <li>Email: contact@subwaywebsite.com</li>
+        <li>Phone: (453) 234 876</li>
+      </ul>
+    </section>
+  </main>
+  
+  <!-- Footer with id "copyright" -->
+  <footer id="copyright">
+    <p>&copy; 2025 Subway Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>
